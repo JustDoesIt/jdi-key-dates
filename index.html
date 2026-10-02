@@ -46,10 +46,10 @@ input[type=search]{font:inherit;font-size:13px;padding:7px 10px;border:1px solid
 .sw.open{background:repeating-linear-gradient(135deg,var(--muted) 0 2px,transparent 2px 5px);border:1.5px solid var(--muted)}
 .sw.today{width:3px;height:14px;background:var(--today);border-radius:1px}
 .board{background:var(--surface);border:1px solid var(--hair);border-radius:12px;overflow:hidden}
-.scroll{overflow-x:auto;overflow-y:hidden;position:relative}
+.scroll{overflow:auto;max-height:calc(100vh - 32px);position:relative}
 .grid{display:grid;grid-template-columns:var(--labelw,300px) 1fr;min-width:max-content}
 .labels{position:sticky;left:0;z-index:3;background:var(--surface);border-right:1px solid var(--hair);box-shadow:4px 0 8px -6px rgba(0,0,0,.25)}
-.lh{height:46px;border-bottom:1px solid var(--hair);display:flex;align-items:flex-end;padding:0 12px 6px;font-size:10.5px;font-weight:700;letter-spacing:1.6px;color:var(--muted);text-transform:uppercase}
+.lh{position:sticky;top:0;z-index:5;background:var(--surface);height:56px;border-bottom:1px solid var(--hair);display:flex;align-items:flex-end;padding:0 12px 6px;font-size:10.5px;font-weight:700;letter-spacing:1.6px;color:var(--muted);text-transform:uppercase}
 .proj{height:34px;display:flex;align-items:center;gap:8px;padding:0 10px;border-bottom:1px solid var(--hair);background:var(--hair2);cursor:pointer;user-select:none}
 .proj .tri{width:0;height:0;border-left:5px solid var(--muted);border-top:4px solid transparent;border-bottom:4px solid transparent;transition:transform .15s}
 .proj.open .tri{transform:rotate(90deg)}
@@ -62,9 +62,11 @@ input[type=search]{font:inherit;font-size:13px;padding:7px 10px;border:1px solid
 .row .ok{margin-left:auto;flex:none;width:14px;height:14px;border-radius:3px;border:1.5px solid var(--hair);display:grid;place-items:center;font-size:10px;color:var(--good)}
 .row .ok.yes{border-color:var(--good)}
 .tl{position:relative}
-.th{height:46px;border-bottom:1px solid var(--hair);position:relative}
-.mon{position:absolute;top:6px;height:16px;font-size:10.5px;font-weight:800;letter-spacing:1.6px;color:var(--muted);text-transform:uppercase;padding-left:6px;border-left:1px solid var(--hair);white-space:nowrap}
-.day{position:absolute;top:26px;height:20px;width:var(--dw);text-align:center;font-family:var(--mono);font-size:10px;color:var(--muted);line-height:20px}
+.th{position:sticky;top:0;z-index:4;background:var(--surface);height:56px;border-bottom:1px solid var(--hair)}
+.mon{position:absolute;top:0;height:22px;border-left:1px solid var(--hair);white-space:nowrap;overflow:visible}
+.mon b{position:sticky;left:calc(var(--labelw,300px) + 8px);display:inline-block;margin-top:6px;margin-left:6px;font-size:10.5px;font-weight:800;letter-spacing:1.6px;color:var(--muted);text-transform:uppercase;background:var(--surface);padding:0 4px;border-radius:3px}
+.day{position:absolute;top:24px;height:30px;width:var(--dw);text-align:center;font-family:var(--mono);font-size:10px;color:var(--muted);line-height:13px;padding-top:2px}
+.day i{display:block;font-style:normal;font-size:8.5px;opacity:.75}
 .day.we{color:var(--muted);opacity:.6}
 .day.td{color:var(--today);font-weight:600}
 .lanes{position:relative}
@@ -161,6 +163,7 @@ tr.pr td{background:var(--hair2);font-weight:800}
   const fmt = d => d ? d.toLocaleDateString('en-GB', {weekday:'short', day:'numeric', month:'short'}) : '';
   const fmtS = d => d ? d.toLocaleDateString('en-GB', {day:'2-digit', month:'2-digit'}) : '';
   const MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const WD = ['Su','Mo','Tu','We','Th','Fr','Sa'];
 
   function rowsOf(doc){ const issued = parseIssued(doc.issued); const out = [];
     for (const r of (doc.rows||[])) {
@@ -196,8 +199,8 @@ tr.pr td{background:var(--hair2);font-weight:800}
     // header
     let th = '';
     for (let i = 0; i < days; i++) { const d = addD(min, i); const x = i * DW; const we = d.getDay() === 0 || d.getDay() === 6;
-      if (d.getDate() === 1 || i === 0) th += `<div class="mon" style="left:${x}px">${MON[d.getMonth()]} ${d.getFullYear()}</div>`;
-      th += `<div class="day${we ? ' we' : ''}${dd(d, today) === 0 ? ' td' : ''}" style="left:${x}px;--dw:${DW}px">${d.getDate()}</div>`; }
+      if (d.getDate() === 1 || i === 0) { const mEnd = new Date(d.getFullYear(), d.getMonth() + 1, 0).getDate(); const span = Math.min(days - i, mEnd - d.getDate() + 1); th += `<div class="mon" style="left:${x}px;width:${span * DW}px"><b>${MON[d.getMonth()]} ${d.getFullYear()}</b></div>`; }
+      th += `<div class="day${we ? ' we' : ''}${dd(d, today) === 0 ? ' td' : ''}" style="left:${x}px;--dw:${DW}px"><i>${WD[d.getDay()]}</i>${d.getDate()}</div>`; }
     let bg = '';
     for (let i = 0; i < days; i++) { const d = addD(min, i); if (d.getDay() === 6) bg += `<div class="wk" style="left:${i*DW}px;width:${DW*2}px"></div>`;
       if (d.getDay() === 1) bg += `<div class="gl m" style="left:${i*DW}px"></div>`; }
