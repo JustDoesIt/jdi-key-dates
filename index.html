@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>JDI Key Dates</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a fixed header with counts and filters, then one Gantt board: project rows on the left,
+   a day-by-day timeline on the right that scrolls sideways. Navy = set up sheets, amber = completion sheets. */
+:root{
+  --bg:#F4F6F9; --surface:#FFFFFF; --ink:#1B2432; --muted:#66718A; --hair:#DCE2EA; --hair2:#EDF0F4;
+  --navy:#1F3A5F; --navy-soft:#D8E2F0; --amber:#D9A21B; --amber-soft:#F6E7BF;
+  --today:#C0603F; --good:#2F8F5B; --warn:#C8871A; --weekend:#EEF1F5; --tip:#1B2432; --tip-ink:#FFFFFF;
+  --display:'Nunito Sans',Avenir Next,Avenir,Helvetica,Arial,sans-serif; --mono:'IBM Plex Mono',SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#0E141C; --surface:#161F2B; --ink:#E6EBF2; --muted:#93A0B4; --hair:#2A3545; --hair2:#1E2834;
+  --navy:#7FA3D6; --navy-soft:#24354D; --amber:#E6B84A; --amber-soft:#4A3C16;
+  --today:#E58A6A; --good:#5FC08A; --warn:#E0A443; --weekend:#121A24; --tip:#E6EBF2; --tip-ink:#0E141C; color-scheme:dark } }
+:root[data-theme="dark"]{
+  --bg:#0E141C; --surface:#161F2B; --ink:#E6EBF2; --muted:#93A0B4; --hair:#2A3545; --hair2:#1E2834;
+  --navy:#7FA3D6; --navy-soft:#24354D; --amber:#E6B84A; --amber-soft:#4A3C16;
+  --today:#E58A6A; --good:#5FC08A; --warn:#E0A443; --weekend:#121A24; --tip:#E6EBF2; --tip-ink:#0E141C; color-scheme:dark }
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--display);font-size:14px;line-height:1.4}
+.wrap{padding-inline:16px;padding-block:14px 24px;max-width:1500px;margin:0 auto}
+header{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px 24px;margin-bottom:12px}
+.brand{display:flex;flex-direction:column;gap:2px}
+.kick{font-size:10.5px;font-weight:700;letter-spacing:2.6px;color:var(--amber);text-transform:uppercase}
+h1{margin:0;font-size:26px;font-weight:800;letter-spacing:-.3px;line-height:1.05;text-wrap:balance}
+.sub{color:var(--muted);font-size:13px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-left:auto;min-width:0;flex:1 1 480px}
+.tile{background:var(--surface);border:1px solid var(--hair);border-radius:10px;padding:10px 12px;min-width:0}
+.tile b{display:block;font-size:10.5px;font-weight:700;letter-spacing:1.6px;color:var(--muted);text-transform:uppercase}
+.tile .v{font-size:24px;font-weight:800;line-height:1.1;margin-top:3px;font-variant-numeric:tabular-nums}
+.tile .d{font-size:12px;color:var(--muted);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tile.alert .v{color:var(--today)}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}
+.seg{display:inline-flex;border:1px solid var(--hair);border-radius:8px;overflow:hidden;background:var(--surface)}
+.seg button{border:0;background:transparent;color:var(--muted);font:inherit;font-weight:700;font-size:12.5px;padding:7px 12px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.seg button:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--amber);outline-offset:1px}
+input[type=search]{font:inherit;font-size:13px;padding:7px 10px;border:1px solid var(--hair);border-radius:8px;background:var(--surface);color:var(--ink);min-width:160px}
+.chk{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;color:var(--muted);cursor:pointer}
+.legend{display:flex;flex-wrap:wrap;gap:12px;margin-left:auto;font-size:12px;color:var(--muted);align-items:center}
+.sw{display:inline-block;width:22px;height:10px;border-radius:3px;vertical-align:middle;margin-right:5px}
+.sw.navy{background:var(--navy)} .sw.amber{background:var(--amber)}
+.sw.open{background:repeating-linear-gradient(135deg,var(--muted) 0 2px,transparent 2px 5px);border:1.5px solid var(--muted)}
+.sw.today{width:3px;height:14px;background:var(--today);border-radius:1px}
+.board{background:var(--surface);border:1px solid var(--hair);border-radius:12px;overflow:hidden}
+.scroll{overflow-x:auto;overflow-y:hidden;position:relative}
+.grid{display:grid;grid-template-columns:var(--labelw,300px) 1fr;min-width:max-content}
+.labels{position:sticky;left:0;z-index:3;background:var(--surface);border-right:1px solid var(--hair);box-shadow:4px 0 8px -6px rgba(0,0,0,.25)}
+.lh{height:46px;border-bottom:1px solid var(--hair);display:flex;align-items:flex-end;padding:0 12px 6px;font-size:10.5px;font-weight:700;letter-spacing:1.6px;color:var(--muted);text-transform:uppercase}
+.proj{height:34px;display:flex;align-items:center;gap:8px;padding:0 10px;border-bottom:1px solid var(--hair);background:var(--hair2);cursor:pointer;user-select:none}
+.proj .tri{width:0;height:0;border-left:5px solid var(--muted);border-top:4px solid transparent;border-bottom:4px solid transparent;transition:transform .15s}
+.proj.open .tri{transform:rotate(90deg)}
+.proj .nm{font-weight:800;font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.proj .pill{margin-left:auto;font-size:10px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;padding:2px 7px;border-radius:999px;color:var(--ink)}
+.pill.setup{background:var(--navy-soft)} .pill.completion{background:var(--amber-soft)}
+.row{height:30px;display:flex;align-items:center;gap:8px;padding:0 10px 0 22px;border-bottom:1px solid var(--hair2);font-size:12.5px}
+.row .n{font-family:var(--mono);font-size:10.5px;color:var(--muted);width:18px;flex:none}
+.row .lb{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.row .ok{margin-left:auto;flex:none;width:14px;height:14px;border-radius:3px;border:1.5px solid var(--hair);display:grid;place-items:center;font-size:10px;color:var(--good)}
+.row .ok.yes{border-color:var(--good)}
+.tl{position:relative}
+.th{height:46px;border-bottom:1px solid var(--hair);position:relative}
+.mon{position:absolute;top:6px;height:16px;font-size:10.5px;font-weight:800;letter-spacing:1.6px;color:var(--muted);text-transform:uppercase;padding-left:6px;border-left:1px solid var(--hair);white-space:nowrap}
+.day{position:absolute;top:26px;height:20px;width:var(--dw);text-align:center;font-family:var(--mono);font-size:10px;color:var(--muted);line-height:20px}
+.day.we{color:var(--muted);opacity:.6}
+.day.td{color:var(--today);font-weight:600}
+.lanes{position:relative}
+.lane{position:relative;height:30px;border-bottom:1px solid var(--hair2)}
+.lane.p{height:34px;background:var(--hair2);border-bottom:1px solid var(--hair)}
+.wk{position:absolute;top:0;bottom:0;background:var(--weekend);pointer-events:none}
+.gl{position:absolute;top:0;bottom:0;width:1px;background:var(--hair2);pointer-events:none}
+.gl.m{background:var(--hair)}
+.now{position:absolute;top:0;bottom:0;width:2px;background:var(--today);z-index:2;pointer-events:none}
+.now::after{content:"TODAY";position:absolute;top:2px;left:4px;font-size:9px;font-weight:800;letter-spacing:1.2px;color:var(--today)}
+.b{position:absolute;top:7px;height:16px;border-radius:4px;cursor:default;min-width:6px}
+.b.setup{background:var(--navy)} .b.completion{background:var(--amber)}
+.b.open.setup{background:var(--navy-soft);border:1.5px solid var(--navy)}
+.b.open.completion{background:var(--amber-soft);border:1.5px solid var(--amber)}
+.b.ghost{top:10px;height:10px;opacity:.45;background:repeating-linear-gradient(135deg,var(--muted) 0 2px,transparent 2px 5px);border:1px solid var(--muted);border-radius:3px;z-index:0}
+.b .tag{position:absolute;left:calc(100% + 6px);top:-1px;font-family:var(--mono);font-size:10px;color:var(--muted);white-space:nowrap;line-height:18px}
+.b:hover,.b:focus-visible{filter:brightness(.92);z-index:4}
+.pt{position:absolute;top:12px;width:8px;height:8px;border-radius:999px;background:var(--ink);transform:translateX(-4px)}
+.sum{position:absolute;top:11px;height:12px;border-radius:999px;opacity:.9}
+.sum.setup{background:var(--navy)} .sum.completion{background:var(--amber)}
+.sum .tag{position:absolute;left:calc(100% + 6px);top:-3px;font-family:var(--mono);font-size:10px;color:var(--muted);white-space:nowrap}
+.tip{position:fixed;z-index:50;background:var(--tip);color:var(--tip-ink);padding:9px 11px;border-radius:8px;font-size:12px;max-width:300px;pointer-events:none;box-shadow:0 8px 24px rgba(0,0,0,.25);line-height:1.4}
+.tip b{display:block;font-size:12.5px;margin-bottom:2px}
+.tip .k{opacity:.7}
+.empty{padding:48px 20px;text-align:center;color:var(--muted)}
+.empty h2{margin:0 0 6px;font-size:18px;color:var(--ink)}
+.empty code{font-family:var(--mono);font-size:12px;background:var(--hair2);padding:2px 6px;border-radius:4px;color:var(--ink)}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:12.5px}
+th{text-align:left;font-size:10.5px;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted);padding:8px 10px;border-bottom:1px solid var(--hair);white-space:nowrap}
+td{padding:7px 10px;border-bottom:1px solid var(--hair2);vertical-align:top}
+td.m{font-family:var(--mono);font-size:11.5px;white-space:nowrap}
+tr.pr td{background:var(--hair2);font-weight:800}
+.foot{margin-top:10px;font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 18px}
+@media (max-width:700px){ .grid{--labelw:200px} .tiles{flex-basis:100%} .legend{margin-left:0} }
+@media (prefers-reduced-motion:reduce){ .proj .tri{transition:none} }
+</style></head><body>
+
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="kick">The JDI Way · Project Management</div>
+      <h1>JDI Key Dates</h1>
+      <div class="sub" id="sub">Set up and completion dates for every live site, read from the sheets in the Key Dates Drop folder.</div>
+    </div>
+    <div class="tiles" id="tiles"></div>
+  </header>
+
+  <div class="bar">
+    <div class="seg" role="group" aria-label="Sheet type">
+      <button id="f-all" aria-pressed="true">All</button>
+      <button id="f-setup" aria-pressed="false">Set up</button>
+      <button id="f-completion" aria-pressed="false">Completion</button>
+    </div>
+    <div class="seg" role="group" aria-label="View">
+      <button id="v-gantt" aria-pressed="true">Gantt</button>
+      <button id="v-table" aria-pressed="false">Table</button>
+    </div>
+    <input type="search" id="q" placeholder="Find a site" aria-label="Find a site">
+    <label class="chk"><input type="checkbox" id="unconf"> Unconfirmed only</label>
+    <div class="legend">
+      <span><i class="sw navy"></i>Set up</span>
+      <span><i class="sw amber"></i>Completion</span>
+      <span><i class="sw open"></i>Not yet confirmed</span>
+      <span><i class="sw today"></i>Today</span>
+    </div>
+  </div>
+
+  <div class="board" id="board"></div>
+  <div class="foot"><span id="upd">Waiting for the first sheet.</span><span>Bars run Start to Complete. An adjusted date replaces the suggested one; the suggested range stays as a hatched ghost until it is confirmed.</span></div>
+</div>
+<div class="tip" id="tip" hidden></div>
+
+<script>
+(function(){
+  const $ = s => document.querySelector(s);
+  const DW = 28; // px per day
+  const state = { docs: [], filter: 'all', view: 'gantt', q: '', unconf: false, open: {} };
+  try { const s = JSON.parse(localStorage.getItem('jdi-keydates-ui') || '{}'); Object.assign(state, {filter: s.filter||'all', view: s.view||'gantt', open: s.open||{}}); } catch(e){}
+  function saveUi(){ try { localStorage.setItem('jdi-keydates-ui', JSON.stringify({filter: state.filter, view: state.view, open: state.open})); } catch(e){} }
+
+  // ---- dates. Sheets carry dd/mm; the year comes from the issued date (dd/mm/yy). A month more than
+  // five months before the issued month belongs to the next year.
+  function parseIssued(s){ const m = /(\d{1,2})\/(\d{1,2})\/(\d{2,4})/.exec(s||''); if(!m) return new Date();
+    let y = +m[3]; if (y < 100) y += 2000; return new Date(y, +m[2]-1, +m[1]); }
+  function parseDM(s, issued){ if(!s) return null; const m = /(\d{1,2})\/(\d{1,2})(?:\/(\d{2,4}))?/.exec(s); if(!m) return null;
+    let y = m[3] ? (+m[3] < 100 ? 2000 + +m[3] : +m[3]) : issued.getFullYear();
+    if (!m[3] && (+m[2]-1) < issued.getMonth() - 5) y += 1;
+    const d = new Date(y, +m[2]-1, +m[1]); return isNaN(d) ? null : d; }
+  const note = s => (s||'').replace(/\d{1,2}\/\d{1,2}(\/\d{2,4})?/, '').trim();
+  const day0 = d => new Date(d.getFullYear(), d.getMonth(), d.getDate());
+  const addD = (d, n) => new Date(d.getFullYear(), d.getMonth(), d.getDate()+n);
+  const dd = (a, b) => Math.round((day0(b) - day0(a)) / 86400000);
+  const fmt = d => d ? d.toLocaleDateString('en-GB', {weekday:'short', day:'numeric', month:'short'}) : '';
+  const fmtS = d => d ? d.toLocaleDateString('en-GB', {day:'2-digit', month:'2-digit'}) : '';
+  const MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+  function rowsOf(doc){ const issued = parseIssued(doc.issued); const out = [];
+    for (const r of (doc.rows||[])) {
+      const ss = parseDM(r.sug_start, issued), sc = parseDM(r.sug_complete, issued);
+      const as = parseDM(r.adj_start, issued), ac = parseDM(r.adj_complete, issued);
+      const useAdj = !!(as || ac);
+      let start = useAdj ? (as || ac) : (ss || sc), end = useAdj ? (ac || as) : (sc || ss);
+      if (!start) continue;
+      if (!end) end = start;
+      if (end < start) { const t = start; start = end; end = t; }
+      const gs = useAdj && (ss || sc) ? (ss || sc) : null, ge = useAdj && (ss || sc) ? (sc || ss) : null;
+      out.push({ ...r, start, end, useAdj, ghostStart: gs, ghostEnd: ge, note: [note(r.sug_start), note(r.sug_complete), note(r.adj_start), note(r.adj_complete)].filter(Boolean).join(' ') });
+    } return out; }
+
+  function visibleDocs(){ const q = state.q.trim().toLowerCase();
+    return state.docs.filter(d => (state.filter === 'all' || d.sheet === state.filter) && (!q || (d.site||'').toLowerCase().includes(q)))
+      .sort((a, b) => (a.site||'').localeCompare(b.site||'') || (a.sheet||'').localeCompare(b.sheet||'')); }
+
+  function render(){
+    const docs = visibleDocs().map(d => ({ doc: d, rows: rowsOf(d).filter(r => !state.unconf || !r.confirmed) }));
+    renderTiles();
+    const board = $('#board');
+    if (!state.docs.length) { board.innerHTML = '<div class="empty"><h2>No sheets yet</h2>Drop a filled key dates PDF into <code>JDI Systems JB › Key Dates › Drop</code>. The hourly check reads it and the site appears here with its bars.</div>'; return; }
+    if (!docs.length) { board.innerHTML = '<div class="empty"><h2>Nothing matches</h2>Clear the search or the filters.</div>'; return; }
+    if (state.view === 'table') return renderTable(docs);
+    const all = docs.flatMap(x => x.rows);
+    const today = day0(new Date());
+    let min = all.length ? all.reduce((m, r) => r.start < m ? r.start : m, all[0].start) : today;
+    let max = all.length ? all.reduce((m, r) => r.end > m ? r.end : m, all[0].end) : today;
+    if (today < min) min = today; if (today > max) max = today;
+    min = addD(min, -3); max = addD(max, 16);
+    const days = dd(min, max) + 1, W = days * DW;
+    // header
+    let th = '';
+    for (let i = 0; i < days; i++) { const d = addD(min, i); const x = i * DW; const we = d.getDay() === 0 || d.getDay() === 6;
+      if (d.getDate() === 1 || i === 0) th += `<div class="mon" style="left:${x}px">${MON[d.getMonth()]} ${d.getFullYear()}</div>`;
+      th += `<div class="day${we ? ' we' : ''}${dd(d, today) === 0 ? ' td' : ''}" style="left:${x}px;--dw:${DW}px">${d.getDate()}</div>`; }
+    let bg = '';
+    for (let i = 0; i < days; i++) { const d = addD(min, i); if (d.getDay() === 6) bg += `<div class="wk" style="left:${i*DW}px;width:${DW*2}px"></div>`;
+      if (d.getDay() === 1) bg += `<div class="gl m" style="left:${i*DW}px"></div>`; }
+    const nowX = dd(min, today) * DW + DW / 2;
+    let labels = `<div class="lh">Site · milestone</div>`, lanes = '';
+    const laneBg = `<div class="lanebg" style="position:absolute;inset:0;pointer-events:none">${bg}</div>`;
+    for (const { doc, rows } of docs) {
+      const open = state.open[doc.id] !== false;
+      const conf = (doc.rows||[]).filter(r => r.confirmed).length, tot = (doc.rows||[]).length;
+      labels += `<div class="proj${open ? ' open' : ''}" data-p="${doc.id}" role="button" tabindex="0" aria-expanded="${open}"><span class="tri"></span><span class="nm" title="${esc(doc.site)}">${esc(doc.site || 'Unnamed site')}</span><span class="pill ${doc.sheet}">${doc.sheet === 'setup' ? 'Set up' : 'Completion'}</span></div>`;
+      // project summary lane: span of all rows
+      let pl = '';
+      if (rows.length) { const s = rows.reduce((m, r) => r.start < m ? r.start : m, rows[0].start), e = rows.reduce((m, r) => r.end > m ? r.end : m, rows[0].end);
+        pl = `<div class="sum ${doc.sheet}" style="left:${dd(min, s)*DW}px;width:${(dd(s, e)+1)*DW}px"><span class="tag">${fmtS(s)} → ${fmtS(e)} · ${conf}/${tot} confirmed</span></div>`; }
+      lanes += `<div class="lane p">${pl}</div>`;
+      if (!open) continue;
+      for (const r of rows) {
+        labels += `<div class="row"><span class="n">${String(r.n).padStart(2, '0')}</span><span class="lb" title="${esc(r.label)}">${esc(r.label || 'Site-specific item')}</span><span class="ok${r.confirmed ? ' yes' : ''}" title="${r.confirmed ? 'Confirmed' : 'Not yet confirmed'}">${r.confirmed ? '✓' : ''}</span></div>`;
+        const x = dd(min, r.start) * DW, w = (dd(r.start, r.end) + 1) * DW;
+        let ghost = '';
+        if (r.ghostStart) ghost = `<div class="b ghost" style="left:${dd(min, r.ghostStart)*DW}px;width:${(dd(r.ghostStart, r.ghostEnd)+1)*DW}px"></div>`;
+        const tag = `${fmtS(r.start)}${dd(r.start, r.end) ? ' → ' + fmtS(r.end) : ''}${r.note ? ' ' + esc(r.note) : ''}`;
+        lanes += `<div class="lane">${ghost}<div class="b ${doc.sheet}${r.confirmed ? '' : ' open'}" tabindex="0" data-tip="${esc(tipText(doc, r))}" style="left:${x}px;width:${w}px"><span class="tag">${tag}</span></div></div>`;
+      }
+    }
+    board.innerHTML = `<div class="scroll" id="scroll"><div class="grid"><div class="labels">${labels}</div><div class="tl" style="width:${W}px"><div class="th">${th}</div><div class="lanes">${laneBg}<div class="now" style="left:${nowX}px"></div>${lanes}</div></div></div></div>`;
+    // scroll so today sits a third in
+    const sc = $('#scroll'); if (sc) sc.scrollLeft = Math.max(0, nowX - sc.clientWidth / 3);
+    board.querySelectorAll('.proj').forEach(el => { const t = () => { state.open[el.dataset.p] = !(state.open[el.dataset.p] !== false); saveUi(); render(); };
+      el.addEventListener('click', t); el.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); t(); } }); });
+    board.querySelectorAll('.b[data-tip]').forEach(el => { el.addEventListener('mousemove', e => showTip(el.dataset.tip, e.clientX, e.clientY)); el.addEventListener('mouseleave', hideTip);
+      el.addEventListener('focus', () => { const r = el.getBoundingClientRect(); showTip(el.dataset.tip, r.left, r.top); }); el.addEventListener('blur', hideTip); });
+  }
+  function tipText(doc, r){ const l = [`${doc.site} · ${doc.sheet === 'setup' ? 'Set up' : 'Completion'}`, `${String(r.n).padStart(2,'0')} ${r.label || 'Site-specific item'}`,
+      `${r.useAdj ? 'Adjusted' : 'Suggested'}: ${fmt(r.start)}${dd(r.start, r.end) ? ' to ' + fmt(r.end) : ''}${r.note ? ' (' + r.note + ')' : ''}`];
+    if (r.ghostStart) l.push(`Suggested was: ${fmt(r.ghostStart)}${dd(r.ghostStart, r.ghostEnd) ? ' to ' + fmt(r.ghostEnd) : ''}`);
+    if (r.comment) l.push(`Comment: ${r.comment}`);
+    l.push(r.confirmed ? 'Confirmed' : 'Not yet confirmed'); return l.join('\n'); }
+  function showTip(t, x, y){ const tip = $('#tip'); const lines = t.split('\n'); tip.innerHTML = `<b>${esc(lines[0])}</b>` + lines.slice(1).map(s => `<div>${esc(s)}</div>`).join(''); tip.hidden = false;
+    const r = tip.getBoundingClientRect(); let L = x + 14, T = y + 14; if (L + r.width > innerWidth - 8) L = x - r.width - 14; if (T + r.height > innerHeight - 8) T = y - r.height - 14; tip.style.left = L + 'px'; tip.style.top = T + 'px'; }
+  function hideTip(){ $('#tip').hidden = true; }
+
+  function renderTable(docs){ let h = '<div class="tbl"><table><thead><tr><th>#</th><th>Milestone</th><th>Suggested start</th><th>Suggested complete</th><th>Adjusted start</th><th>Adjusted complete</th><th>Comments</th><th>Confirmed</th></tr></thead><tbody>';
+    for (const { doc, rows } of docs) { h += `<tr class="pr"><td colspan="8">${esc(doc.site)} · ${doc.sheet === 'setup' ? 'Set up' : 'Completion'} · issued ${esc(doc.issued||'')} · ${esc(doc.elevations||'')}</td></tr>`;
+      for (const r of rows) h += `<tr><td class="m">${String(r.n).padStart(2,'0')}</td><td>${esc(r.label)}</td><td class="m">${esc(r.sug_start)}</td><td class="m">${esc(r.sug_complete)}</td><td class="m">${esc(r.adj_start)}</td><td class="m">${esc(r.adj_complete)}</td><td>${esc(r.comment)}</td><td>${r.confirmed ? '✓' : ''}</td></tr>`; }
+    $('#board').innerHTML = h + '</tbody></table></div>'; }
+
+  function renderTiles(){ const today = day0(new Date()); const docs = state.docs; const rows = docs.flatMap(d => rowsOf(d).map(r => ({ d, r })));
+    const week = rows.filter(x => dd(today, x.r.start) >= 0 && dd(today, x.r.start) <= 7).length;
+    const unconf = rows.filter(x => !x.r.confirmed && x.r.end >= today).length;
+    const dis = rows.filter(x => /scaffold dismantle/i.test(x.r.label) && x.r.start >= today).sort((a, b) => a.r.start - b.r.start)[0];
+    const sites = new Set(docs.map(d => d.site)).size;
+    $('#tiles').innerHTML = `<div class="tile"><b>Sites</b><div class="v">${sites}</div><div class="d">${docs.filter(d => d.sheet==='setup').length} set up · ${docs.filter(d => d.sheet==='completion').length} completion</div></div>
+      <div class="tile${week ? ' alert' : ''}"><b>Starting in 7 days</b><div class="v">${week}</div><div class="d">milestones from today</div></div>
+      <div class="tile"><b>Next scaffold down</b><div class="v">${dis ? fmtS(dis.r.start) : '—'}</div><div class="d">${dis ? esc(dis.d.site) : 'none scheduled'}</div></div>
+      <div class="tile${unconf ? ' alert' : ''}"><b>Not yet confirmed</b><div class="v">${unconf}</div><div class="d">upcoming rows without a tick</div></div>`; }
+
+  function esc(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+  // ---- controls
+  for (const f of ['all','setup','completion']) $('#f-' + f).addEventListener('click', () => { state.filter = f; for (const g of ['all','setup','completion']) $('#f-' + g).setAttribute('aria-pressed', g === f); saveUi(); render(); });
+  for (const v of ['gantt','table']) $('#v-' + v).addEventListener('click', () => { state.view = v; for (const g of ['gantt','table']) $('#v-' + g).setAttribute('aria-pressed', g === v); saveUi(); render(); });
+  for (const f of ['all','setup','completion']) $('#f-' + f).setAttribute('aria-pressed', state.filter === f);
+  for (const v of ['gantt','table']) $('#v-' + v).setAttribute('aria-pressed', state.view === v);
+  $('#q').addEventListener('input', e => { state.q = e.target.value; render(); });
+  $('#unconf').addEventListener('change', e => { state.unconf = e.target.checked; render(); });
+  addEventListener('resize', () => { if (state.view === 'gantt') render(); });
+
+  // ---- data: data.json beside this page, written by the hourly sync. The page works with no data too.
+  render();
+  (async () => {
+    try {
+      const r = await fetch('data.json?t=' + Date.now(), { cache: 'no-store' });
+      if (!r.ok) throw new Error(r.status);
+      const j = await r.json();
+      state.docs = (j.projects || []);
+      const last = j.updated || state.docs.map(d => d.extracted_at || '').sort().pop();
+      $('#upd').textContent = state.docs.length ? (state.docs.length + ' sheet' + (state.docs.length === 1 ? '' : 's') + ' · last updated ' + (last ? new Date(last).toLocaleString('en-GB', {day:'numeric', month:'short', hour:'2-digit', minute:'2-digit'}) : '—')) : 'Waiting for the first sheet.';
+      render();
+    } catch (e) { $('#upd').textContent = 'No dates loaded yet.'; }
+  })();
+})();
+</script>
+
+</body></html>
