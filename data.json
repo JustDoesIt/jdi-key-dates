@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02T06:42:33Z",
+ "updated": "2026-10-02T06:47:00Z",
  "projects": [
   {
    "id": "129-143-bournehall-avenue-setup",
@@ -422,110 +422,6 @@
     }
    ],
    "extracted_at": "2026-10-02T05:03:47Z"
-  },
-  {
-   "id": "test-site-delete-me-completion",
-   "site": "TEST SITE - delete me",
-   "sheet": "completion",
-   "issued": "02/10/26",
-   "elevations": "Front",
-   "prepared_by": "",
-   "reason_for_change": "",
-   "source": "PROJECT COMPLETION KEY DATES TEST SITE.pdf",
-   "source_modified": "2026-10-02T06:40:52Z",
-   "rows": [
-    {
-     "n": 1,
-     "label": "Building works",
-     "sug_start": "06/10",
-     "sug_complete": "10/10",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "routine test 2 Oct",
-     "confirmed": false
-    },
-    {
-     "n": 2,
-     "label": "Painting",
-     "sug_start": "",
-     "sug_complete": "",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 3,
-     "label": "Windows eased, if reported (1 day before JDI snag)",
-     "sug_start": "",
-     "sug_complete": "",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 4,
-     "label": "Full clean and JDI snag",
-     "sug_start": "",
-     "sug_complete": "",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 5,
-     "label": "Surveyor attendance for snagging",
-     "sug_start": "",
-     "sug_complete": "",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 6,
-     "label": "Decommission site (site welfare)",
-     "sug_start": "",
-     "sug_complete": "",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 7,
-     "label": "Scaffold dismantle",
-     "sug_start": "13/10",
-     "sug_complete": "15/10",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": true
-    },
-    {
-     "n": 8,
-     "label": "Final clean",
-     "sug_start": "",
-     "sug_complete": "",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 9,
-     "label": "Final day on site",
-     "sug_start": "16/10",
-     "sug_complete": "16/10",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    }
-   ],
-   "extracted_at": "2026-10-02T06:42:33Z"
   }
  ]
 }
