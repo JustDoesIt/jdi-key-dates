@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02T06:47:00Z",
+ "updated": "2026-10-03T06:03:36Z",
  "projects": [
   {
    "id": "129-143-bournehall-avenue-setup",
@@ -11,6 +11,8 @@
    "reason_for_change": "",
    "source": "PROJECT SET UP KEY DATES 129-143 BOURNEHALL AVENUE - DRAFT.pdf",
    "source_modified": "2026-10-01T10:31:38Z",
+   "source_client_modified": "2026-10-01T08:00:26Z",
+   "page": 1,
    "rows": [
     {
      "n": 1,
@@ -153,7 +155,7 @@
      "confirmed": false
     }
    ],
-   "extracted_at": "2026-10-02T05:03:47Z"
+   "extracted_at": "2026-10-03T06:03:32Z"
   },
   {
    "id": "41-handforth-road-completion",
@@ -165,6 +167,8 @@
    "reason_for_change": "",
    "source": "PROJECT COMPLETION KEY DATES 41 HANDFORTH ROAD.pdf",
    "source_modified": "2026-10-01T10:31:38Z",
+   "source_client_modified": "2026-10-01T08:00:26Z",
+   "page": 1,
    "rows": [
     {
      "n": 1,
@@ -267,7 +271,7 @@
      "confirmed": false
     }
    ],
-   "extracted_at": "2026-10-02T06:42:33Z"
+   "extracted_at": "2026-10-03T06:03:32Z"
   },
   {
    "id": "5-27-croxdale-road-setup",
@@ -279,6 +283,8 @@
    "reason_for_change": "",
    "source": "PROJECT SET UP KEY DATES 5-27 CROXDALE ROAD - DRAFT.pdf",
    "source_modified": "2026-10-01T10:31:38Z",
+   "source_client_modified": "2026-10-01T08:00:26Z",
+   "page": 1,
    "rows": [
     {
      "n": 1,
@@ -421,7 +427,7 @@
      "confirmed": false
     }
    ],
-   "extracted_at": "2026-10-02T05:03:47Z"
+   "extracted_at": "2026-10-03T06:03:32Z"
   }
  ]
 }
