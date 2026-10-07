@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-05T09:43:25Z",
+ "updated": "2026-10-07T17:21:27Z",
  "projects": [
   {
    "id": "129-143-bournehall-avenue-setup",
@@ -156,6 +156,112 @@
     }
    ],
    "extracted_at": "2026-10-03T06:03:32Z"
+  },
+  {
+   "id": "27-palace-gardens-terrace-completion",
+   "site": "27 Palace Gardens Terrace",
+   "sheet": "completion",
+   "issued": "07/10/26",
+   "elevations": "",
+   "prepared_by": "",
+   "reason_for_change": "Converted from the site's SITE COMPLETION DATES sheet (elevation: all), 7 Oct 2026.",
+   "source": "PROJECT COMPLETION KEY DATES 27 PALACE GARDENS TERRACE.pdf",
+   "source_modified": "2026-10-07T16:37:10Z",
+   "source_client_modified": "2026-10-07T16:37:05Z",
+   "page": 1,
+   "rows": [
+    {
+     "n": 1,
+     "label": "Building works",
+     "sug_start": "",
+     "sug_complete": "13/10",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 2,
+     "label": "Painting",
+     "sug_start": "",
+     "sug_complete": "25/09",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 3,
+     "label": "Windows eased, if reported (1 day before JDI snag)",
+     "sug_start": "13/10",
+     "sug_complete": "13/10",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 4,
+     "label": "Full clean and JDI snag",
+     "sug_start": "19/10",
+     "sug_complete": "22/10",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 5,
+     "label": "Surveyor attendance for snagging",
+     "sug_start": "22/10",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 6,
+     "label": "Decommission site (site welfare)",
+     "sug_start": "23/10",
+     "sug_complete": "23/10",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 7,
+     "label": "Scaffold dismantle",
+     "sug_start": "26/10",
+     "sug_complete": "29/10",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 8,
+     "label": "Final clean",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 9,
+     "label": "Final day on site",
+     "sug_start": "30/10",
+     "sug_complete": "30/10",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    }
+   ],
+   "extracted_at": "2026-10-07T17:21:27Z"
   },
   {
    "id": "41-handforth-road-completion",
