@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07T17:21:27Z",
+ "updated": "2026-10-08T08:24:35Z",
  "projects": [
   {
    "id": "129-143-bournehall-avenue-setup",
@@ -156,6 +156,182 @@
     }
    ],
    "extracted_at": "2026-10-03T06:03:32Z"
+  },
+  {
+   "id": "129-143-bournehall-avenue-setup",
+   "site": "129-143 Bournehall Avenue",
+   "sheet": "setup",
+   "issued": "08/10/2026",
+   "elevations": "",
+   "prepared_by": "",
+   "reason_for_change": "",
+   "source": "PROJECT SET UP KEY DATES 129-143 BOURNEHALL AVENUE.pdf",
+   "source_modified": "2026-10-08T08:23:14Z",
+   "source_client_modified": "2026-10-08T08:23:10Z",
+   "page": 1,
+   "rows": [
+    {
+     "n": 1,
+     "label": "Lay protection and pre-scaffold tasks",
+     "sug_start": "08/10",
+     "sug_complete": "08/10",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 2,
+     "label": "Scaffold erect (inspect on completion)",
+     "sug_start": "24/9",
+     "sug_complete": "8/10",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 3,
+     "label": "Scaffold erect (inspect on completion)",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 4,
+     "label": "Scaffold erect (inspect on completion)",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 5,
+     "label": "Alarm installed",
+     "sug_start": "24/9",
+     "sug_complete": "24/9",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 6,
+     "label": "Gantry",
+     "sug_start": "25/9",
+     "sug_complete": "25/9",
+     "adj_start": "8/10",
+     "adj_complete": "8/10",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 7,
+     "label": "Welfare set up",
+     "sug_start": "12/10",
+     "sug_complete": "14/10",
+     "adj_start": "13/10",
+     "adj_complete": "16/10",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 8,
+     "label": "Toilet on site",
+     "sug_start": "13/10",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 9,
+     "label": "Electrician for site power",
+     "sug_start": "14/10",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 10,
+     "label": "Enabling works",
+     "sug_start": "21/10",
+     "sug_complete": "22/10",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 11,
+     "label": "Survey extent of works",
+     "sug_start": "23/10",
+     "sug_complete": "23/10",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 12,
+     "label": "JDI initial walk over (2–3 days after scaffold complete)",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 13,
+     "label": "Send the schedules to the surveyor",
+     "sug_start": "25/10",
+     "sug_complete": "25/10",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 14,
+     "label": "Justin’s pre-walk (1–2 days before the surveyor survey)",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 15,
+     "label": "JDI survey",
+     "sug_start": "26/10",
+     "sug_complete": "26/10",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 16,
+     "label": "Surveyor survey",
+     "sug_start": "26/10",
+     "sug_complete": "26/10",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    }
+   ],
+   "extracted_at": "2026-10-08T08:24:35Z"
   },
   {
    "id": "27-palace-gardens-terrace-completion",
@@ -534,6 +710,182 @@
     }
    ],
    "extracted_at": "2026-10-03T06:03:32Z"
+  },
+  {
+   "id": "5-27-croxdale-road-setup",
+   "site": "5-27 Croxdale Road",
+   "sheet": "setup",
+   "issued": "08/10/2026",
+   "elevations": "",
+   "prepared_by": "",
+   "reason_for_change": "",
+   "source": "PROJECT SET UP KEY DATES 5-27 CROXDALE ROAD.pdf",
+   "source_modified": "2026-10-08T08:23:18Z",
+   "source_client_modified": "2026-10-08T08:23:10Z",
+   "page": 1,
+   "rows": [
+    {
+     "n": 1,
+     "label": "Lay protection and pre-scaffold tasks",
+     "sug_start": "08/10",
+     "sug_complete": "08/10",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 2,
+     "label": "Scaffold erect (inspect on completion)",
+     "sug_start": "28/09",
+     "sug_complete": "08/10",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 3,
+     "label": "Scaffold erect (inspect on completion)",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 4,
+     "label": "Scaffold erect (inspect on completion)",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 5,
+     "label": "Alarm installed",
+     "sug_start": "28/09",
+     "sug_complete": "28/09",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 6,
+     "label": "Gantry",
+     "sug_start": "07/10",
+     "sug_complete": "07/10",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 7,
+     "label": "Welfare set up",
+     "sug_start": "12/10",
+     "sug_complete": "14/10",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 8,
+     "label": "Toilet on site",
+     "sug_start": "13/10",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 9,
+     "label": "Electrician for site power",
+     "sug_start": "14/10",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 10,
+     "label": "Enabling works",
+     "sug_start": "15/10",
+     "sug_complete": "16/10",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 11,
+     "label": "Survey extent of works",
+     "sug_start": "19/10",
+     "sug_complete": "19/10",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 12,
+     "label": "JDI initial walk over (2–3 days after scaffold complete)",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 13,
+     "label": "Send the schedules to the surveyor",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "20/10",
+     "adj_complete": "20/10",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 14,
+     "label": "Justin’s pre-walk (1–2 days before the surveyor survey)",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 15,
+     "label": "JDI survey",
+     "sug_start": "20/10",
+     "sug_complete": "20/10",
+     "adj_start": "21/10",
+     "adj_complete": "21/10",
+     "comment": "41 HR surveyor snagging on 20/10 so adjusted",
+     "confirmed": false
+    },
+    {
+     "n": 16,
+     "label": "Surveyor survey",
+     "sug_start": "20/10",
+     "sug_complete": "20/10",
+     "adj_start": "21/10",
+     "adj_complete": "21/10",
+     "comment": "",
+     "confirmed": false
+    }
+   ],
+   "extracted_at": "2026-10-08T08:24:35Z"
   }
  ]
 }
