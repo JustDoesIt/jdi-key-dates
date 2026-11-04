@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T07:21:40Z",
+ "updated": "2026-11-04T11:22:15Z",
  "projects": [
   {
    "id": "129-143-bournehall-avenue-setup",
@@ -1138,6 +1138,192 @@
     }
    ],
    "extracted_at": "2026-10-08T08:24:35Z"
+  },
+  {
+   "id": "83-85a-queens-gate-terrace-setup",
+   "site": "83-85a Queens Gate Terrace",
+   "sheet": "setup",
+   "issued": "04/11/2026",
+   "elevations": "All",
+   "prepared_by": "Faye Bartolo",
+   "reason_for_change": "",
+   "source": "JDI-Project-Set-Up-Key-Dates-Externals - 83-85 QGT.pdf",
+   "source_modified": "2026-11-04T10:21:09Z",
+   "source_client_modified": "2026-11-04T10:21:04Z",
+   "page": 1,
+   "rows": [
+    {
+     "n": 1,
+     "label": "Lay protection and pre-scaffold tasks",
+     "sug_start": "13/11",
+     "sug_complete": "13/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 2,
+     "label": "Scaffold erect (inspect on completion)",
+     "sug_start": "16/11",
+     "sug_complete": "20/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "Front Elevation",
+     "confirmed": false
+    },
+    {
+     "n": 3,
+     "label": "Scaffold erect (inspect on completion)",
+     "sug_start": "23/11",
+     "sug_complete": "30/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "Bridge, Rear and Chimneys",
+     "confirmed": false
+    },
+    {
+     "n": 4,
+     "label": "Scaffold erect (inspect on completion)",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 5,
+     "label": "Alarm installed",
+     "sug_start": "16/11",
+     "sug_complete": "23/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "16/11 = front and 23/11 = rear",
+     "confirmed": false
+    },
+    {
+     "n": 6,
+     "label": "Gantry",
+     "sug_start": "16/11",
+     "sug_complete": "17/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 7,
+     "label": "Welfare set up",
+     "sug_start": "01/12",
+     "sug_complete": "03/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 8,
+     "label": "Toilet on site",
+     "sug_start": "18/11",
+     "sug_complete": "18/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "Book on site for scaffolders",
+     "confirmed": false
+    },
+    {
+     "n": 9,
+     "label": "Electrician for site power",
+     "sug_start": "04/12",
+     "sug_complete": "04/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 10,
+     "label": "Enabling works",
+     "sug_start": "04/12",
+     "sug_complete": "09/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "DOFF Rear on 10/12 - 11/12",
+     "confirmed": false
+    },
+    {
+     "n": 11,
+     "label": "Start painting prep",
+     "sug_start": "14/12",
+     "sug_complete": "14/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 12,
+     "label": "Start fixed items work",
+     "sug_start": "14/12",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 13,
+     "label": "Survey extent of works",
+     "sug_start": "14/12",
+     "sug_complete": "15/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 14,
+     "label": "JDI initial walk over (2–3 days after scaffold complete)",
+     "sug_start": "02/12",
+     "sug_complete": "02/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "JB A/L these dates",
+     "confirmed": false
+    },
+    {
+     "n": 15,
+     "label": "Send the schedules to the surveyor",
+     "sug_start": "15/12",
+     "sug_complete": "15/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 16,
+     "label": "JDI survey",
+     "sug_start": "16/12",
+     "sug_complete": "16/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "AM",
+     "confirmed": false
+    },
+    {
+     "n": 17,
+     "label": "Surveyor survey",
+     "sug_start": "16/12",
+     "sug_complete": "16/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "PM",
+     "confirmed": false
+    }
+   ],
+   "extracted_at": "2026-11-04T11:22:12Z"
   }
  ]
 }
