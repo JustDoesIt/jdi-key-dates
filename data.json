@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T20:21:44Z",
+ "updated": "2026-11-04T07:21:40Z",
  "projects": [
   {
    "id": "129-143-bournehall-avenue-setup",
@@ -332,6 +332,258 @@
     }
    ],
    "extracted_at": "2026-10-08T08:24:35Z"
+  },
+  {
+   "id": "23-queens-gate-terrace-completion",
+   "site": "23 Queens Gate Terrace",
+   "sheet": "completion",
+   "issued": "04/11/2026",
+   "elevations": "Ground and Basement",
+   "prepared_by": "Faye Bartolo",
+   "reason_for_change": "",
+   "source": "JDI-Project-Completion-Key-Dates-Externals - 23 QGT Ground and Basement.pdf",
+   "source_modified": "2026-11-04T06:59:57Z",
+   "source_client_modified": "2026-11-04T06:59:52Z",
+   "page": 1,
+   "rows": [
+    {
+     "n": 1,
+     "label": "Building works",
+     "sug_start": "16/11",
+     "sug_complete": "19/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 2,
+     "label": "Roofing complete",
+     "sug_start": "n/a",
+     "sug_complete": "n/a",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 3,
+     "label": "Painting complete",
+     "sug_start": "n/a",
+     "sug_complete": "n/a",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 4,
+     "label": "Windows eased, if reported (1 day before JDI snag)",
+     "sug_start": "n/a",
+     "sug_complete": "n/a",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 5,
+     "label": "Full clean and JDI snag",
+     "sug_start": "30/11",
+     "sug_complete": "30/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 6,
+     "label": "Surveyor attendance for snagging",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 7,
+     "label": "Decommission site (site welfare)",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 8,
+     "label": "Scaffold dismantle",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 9,
+     "label": "Final clean",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 10,
+     "label": "Final day on site",
+     "sug_start": "01/12",
+     "sug_complete": "01/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 11,
+     "label": "Project handover",
+     "sug_start": "01/12",
+     "sug_complete": "01/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    }
+   ],
+   "extracted_at": "2026-11-04T07:21:38Z"
+  },
+  {
+   "id": "23-queens-gate-terrace-completion",
+   "site": "23 Queens Gate Terrace",
+   "sheet": "completion",
+   "issued": "04/11/2026",
+   "elevations": "Rear, Roof and Front",
+   "prepared_by": "Faye Bartolo",
+   "reason_for_change": "",
+   "source": "JDI-Project-Completion-Key-Dates-Externals - 23 QGT Rear, Roof and Front.pdf",
+   "source_modified": "2026-11-04T06:58:10Z",
+   "source_client_modified": "2026-11-04T06:57:57Z",
+   "page": 1,
+   "rows": [
+    {
+     "n": 1,
+     "label": "Building works",
+     "sug_start": "12/11",
+     "sug_complete": "16/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 2,
+     "label": "Roofing complete",
+     "sug_start": "as above",
+     "sug_complete": "as above",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 3,
+     "label": "Painting complete",
+     "sug_start": "09/11",
+     "sug_complete": "16/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 4,
+     "label": "Windows eased, if reported (1 day before JDI snag)",
+     "sug_start": "16/11",
+     "sug_complete": "16/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 5,
+     "label": "Full clean and JDI snag",
+     "sug_start": "16/11",
+     "sug_complete": "18/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 6,
+     "label": "Surveyor attendance for snagging",
+     "sug_start": "19/11",
+     "sug_complete": "19/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 7,
+     "label": "Decommission site (site welfare)",
+     "sug_start": "22/11",
+     "sug_complete": "22/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 8,
+     "label": "Scaffold dismantle",
+     "sug_start": "23/11",
+     "sug_complete": "27/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 9,
+     "label": "Final clean",
+     "sug_start": "n/a",
+     "sug_complete": "n/a",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 10,
+     "label": "Final day on site",
+     "sug_start": "n/a",
+     "sug_complete": "n/a",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 11,
+     "label": "Project handover",
+     "sug_start": "n/a",
+     "sug_complete": "n/a",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    }
+   ],
+   "extracted_at": "2026-11-04T07:21:38Z"
   },
   {
    "id": "27-palace-gardens-terrace-completion",
