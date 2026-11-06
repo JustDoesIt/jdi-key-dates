@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T11:22:15Z",
+ "updated": "2026-11-06T13:22:03Z",
  "projects": [
   {
    "id": "129-143-bournehall-avenue-setup",
@@ -1324,6 +1324,258 @@
     }
    ],
    "extracted_at": "2026-11-04T11:22:12Z"
+  },
+  {
+   "id": "hillcourt-34-highgate-west-hill-completion",
+   "site": "Hillcourt, 34 Highgate West Hill",
+   "sheet": "completion",
+   "issued": "06/11/2026",
+   "elevations": "Phase 1",
+   "prepared_by": "Faye Bartolo",
+   "reason_for_change": "",
+   "source": "JDI-Project-Completion-Key-Dates-Externals - Highgate 34 West Hill - Phase 1.pdf",
+   "source_modified": "2026-11-06T12:43:58Z",
+   "source_client_modified": "2026-11-06T12:39:39Z",
+   "page": 1,
+   "rows": [
+    {
+     "n": 1,
+     "label": "Building works",
+     "sug_start": "13/11",
+     "sug_complete": "13/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 2,
+     "label": "Roofing complete",
+     "sug_start": "13/11",
+     "sug_complete": "13/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 3,
+     "label": "Painting complete",
+     "sug_start": "13/11",
+     "sug_complete": "13/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 4,
+     "label": "Windows eased, if reported (1 day before JDI snag)",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 5,
+     "label": "Full clean and JDI snag",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 6,
+     "label": "Surveyor attendance for snagging",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 7,
+     "label": "Decommission site (site welfare)",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 8,
+     "label": "Scaffold dismantle",
+     "sug_start": "07/12",
+     "sug_complete": "11/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 9,
+     "label": "Final clean",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 10,
+     "label": "Final day on site",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 11,
+     "label": "Project handover",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    }
+   ],
+   "extracted_at": "2026-11-06T13:22:00Z"
+  },
+  {
+   "id": "hillcourt-34-highgate-west-hill-completion",
+   "site": "Hillcourt, 34 Highgate West Hill",
+   "sheet": "completion",
+   "issued": "06/11/2026",
+   "elevations": "Phase 2",
+   "prepared_by": "Faye Bartolo",
+   "reason_for_change": "",
+   "source": "JDI-Project-Completion-Key-Dates-Externals - Highgate 34 West Hill - Phase 2.pdf",
+   "source_modified": "2026-11-06T12:44:06Z",
+   "source_client_modified": "2026-11-06T12:43:46Z",
+   "page": 1,
+   "rows": [
+    {
+     "n": 1,
+     "label": "Building works",
+     "sug_start": "27/11",
+     "sug_complete": "27/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 2,
+     "label": "Roofing complete",
+     "sug_start": "13/11",
+     "sug_complete": "13/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 3,
+     "label": "Painting complete",
+     "sug_start": "13/11",
+     "sug_complete": "13/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 4,
+     "label": "Windows eased, if reported (1 day before JDI snag)",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 5,
+     "label": "Full clean and JDI snag",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 6,
+     "label": "Surveyor attendance for snagging",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 7,
+     "label": "Decommission site (site welfare)",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 8,
+     "label": "Scaffold dismantle",
+     "sug_start": "14/12",
+     "sug_complete": "18/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 9,
+     "label": "Final clean",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 10,
+     "label": "Final day on site",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 11,
+     "label": "Project handover",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    }
+   ],
+   "extracted_at": "2026-11-06T13:22:00Z"
   }
  ]
 }
