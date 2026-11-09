@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T06:22:35Z",
+ "updated": "2026-11-09T06:25:03Z",
  "orders": [
   {
    "site": "1 Nevern Square",
@@ -350,16 +350,6 @@
    "source": "Kings Court, 2-16 Goodge Street - LUK Scaffolding Ltd.pdf",
    "source_modified": "2025-04-13T11:44:01Z",
    "source_client_modified": "2025-04-13T11:43:55Z"
-  },
-  {
-   "site": "Montrose House, 44 Prince’s Gate, Exhibition Road,",
-   "scaffolder": "AGA Scaffolding Ltd",
-   "erect_days": 7.0,
-   "dismantle_days": 5.0,
-   "order_date": "27/10/2023",
-   "source": "Montrose House - AGA Scaffolding Ltd.pdf",
-   "source_modified": "2023-11-06T08:28:12Z",
-   "source_client_modified": "2023-11-06T08:28:06Z"
   },
   {
    "site": "Russell Square Mansions, 122 Southampton Row,",
