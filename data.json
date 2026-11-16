@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-06T13:22:03Z",
+ "updated": "2026-11-16T10:23:55Z",
  "projects": [
   {
-   "id": "129-143-bournehall-avenue-setup",
+   "id": "129-143-bournehall-avenue-setup--all",
    "site": "129-143 Bournehall Avenue",
    "sheet": "setup",
    "issued": "23/09/26",
@@ -158,7 +158,7 @@
    "extracted_at": "2026-10-03T06:03:32Z"
   },
   {
-   "id": "129-143-bournehall-avenue-setup",
+   "id": "129-143-bournehall-avenue-setup--project-set-up-key-dates-129-143-bournehall-avenue",
    "site": "129-143 Bournehall Avenue",
    "sheet": "setup",
    "issued": "08/10/2026",
@@ -334,258 +334,6 @@
    "extracted_at": "2026-10-08T08:24:35Z"
   },
   {
-   "id": "23-queens-gate-terrace-completion",
-   "site": "23 Queens Gate Terrace",
-   "sheet": "completion",
-   "issued": "04/11/2026",
-   "elevations": "Ground and Basement",
-   "prepared_by": "Faye Bartolo",
-   "reason_for_change": "",
-   "source": "JDI-Project-Completion-Key-Dates-Externals - 23 QGT Ground and Basement.pdf",
-   "source_modified": "2026-11-04T06:59:57Z",
-   "source_client_modified": "2026-11-04T06:59:52Z",
-   "page": 1,
-   "rows": [
-    {
-     "n": 1,
-     "label": "Building works",
-     "sug_start": "16/11",
-     "sug_complete": "19/11",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 2,
-     "label": "Roofing complete",
-     "sug_start": "n/a",
-     "sug_complete": "n/a",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 3,
-     "label": "Painting complete",
-     "sug_start": "n/a",
-     "sug_complete": "n/a",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 4,
-     "label": "Windows eased, if reported (1 day before JDI snag)",
-     "sug_start": "n/a",
-     "sug_complete": "n/a",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 5,
-     "label": "Full clean and JDI snag",
-     "sug_start": "30/11",
-     "sug_complete": "30/11",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 6,
-     "label": "Surveyor attendance for snagging",
-     "sug_start": "",
-     "sug_complete": "",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 7,
-     "label": "Decommission site (site welfare)",
-     "sug_start": "",
-     "sug_complete": "",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 8,
-     "label": "Scaffold dismantle",
-     "sug_start": "",
-     "sug_complete": "",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 9,
-     "label": "Final clean",
-     "sug_start": "",
-     "sug_complete": "",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 10,
-     "label": "Final day on site",
-     "sug_start": "01/12",
-     "sug_complete": "01/12",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 11,
-     "label": "Project handover",
-     "sug_start": "01/12",
-     "sug_complete": "01/12",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    }
-   ],
-   "extracted_at": "2026-11-04T07:21:38Z"
-  },
-  {
-   "id": "23-queens-gate-terrace-completion",
-   "site": "23 Queens Gate Terrace",
-   "sheet": "completion",
-   "issued": "04/11/2026",
-   "elevations": "Rear, Roof and Front",
-   "prepared_by": "Faye Bartolo",
-   "reason_for_change": "",
-   "source": "JDI-Project-Completion-Key-Dates-Externals - 23 QGT Rear, Roof and Front.pdf",
-   "source_modified": "2026-11-04T06:58:10Z",
-   "source_client_modified": "2026-11-04T06:57:57Z",
-   "page": 1,
-   "rows": [
-    {
-     "n": 1,
-     "label": "Building works",
-     "sug_start": "12/11",
-     "sug_complete": "16/11",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 2,
-     "label": "Roofing complete",
-     "sug_start": "as above",
-     "sug_complete": "as above",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 3,
-     "label": "Painting complete",
-     "sug_start": "09/11",
-     "sug_complete": "16/11",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 4,
-     "label": "Windows eased, if reported (1 day before JDI snag)",
-     "sug_start": "16/11",
-     "sug_complete": "16/11",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 5,
-     "label": "Full clean and JDI snag",
-     "sug_start": "16/11",
-     "sug_complete": "18/11",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 6,
-     "label": "Surveyor attendance for snagging",
-     "sug_start": "19/11",
-     "sug_complete": "19/11",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 7,
-     "label": "Decommission site (site welfare)",
-     "sug_start": "22/11",
-     "sug_complete": "22/11",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 8,
-     "label": "Scaffold dismantle",
-     "sug_start": "23/11",
-     "sug_complete": "27/11",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 9,
-     "label": "Final clean",
-     "sug_start": "n/a",
-     "sug_complete": "n/a",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 10,
-     "label": "Final day on site",
-     "sug_start": "n/a",
-     "sug_complete": "n/a",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 11,
-     "label": "Project handover",
-     "sug_start": "n/a",
-     "sug_complete": "n/a",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    }
-   ],
-   "extracted_at": "2026-11-04T07:21:38Z"
-  },
-  {
    "id": "27-palace-gardens-terrace-completion",
    "site": "27 Palace Gardens Terrace",
    "sheet": "completion",
@@ -690,6 +438,132 @@
     }
    ],
    "extracted_at": "2026-10-26T20:21:41Z"
+  },
+  {
+   "id": "31-roland-gardens-completion",
+   "site": "31 Roland Gardens",
+   "sheet": "completion",
+   "issued": "11/11/2026",
+   "elevations": "Front and Back",
+   "prepared_by": "Faye Bartolo",
+   "reason_for_change": "",
+   "source": "JDI-Project-Completion-Key-Dates-Externals - 31 Roland Gardens.pdf",
+   "source_modified": "2026-11-11T10:53:21Z",
+   "source_client_modified": "2026-11-11T10:53:14Z",
+   "page": 1,
+   "rows": [
+    {
+     "n": 1,
+     "label": "Building works",
+     "sug_start": "",
+     "sug_complete": "03/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 2,
+     "label": "Roofing complete",
+     "sug_start": "",
+     "sug_complete": "03/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 3,
+     "label": "Painting complete",
+     "sug_start": "",
+     "sug_complete": "03/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 4,
+     "label": "Windows eased, if reported (1 day before JDI snag)",
+     "sug_start": "04/12",
+     "sug_complete": "04/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 5,
+     "label": "Full clean and JDI snag",
+     "sug_start": "04/12",
+     "sug_complete": "07/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 6,
+     "label": "Surveyor attendance for snagging",
+     "sug_start": "08/12",
+     "sug_complete": "08/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 7,
+     "label": "Decommission site (site welfare)",
+     "sug_start": "09/12",
+     "sug_complete": "10/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 8,
+     "label": "Scaffold dismantle",
+     "sug_start": "10/12",
+     "sug_complete": "17/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 9,
+     "label": "Final clean",
+     "sug_start": "18/12",
+     "sug_complete": "18/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 10,
+     "label": "Final day on site",
+     "sug_start": "18/12",
+     "sug_complete": "18/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 11,
+     "label": "Project handover",
+     "sug_start": "05/01",
+     "sug_complete": "05/01",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    }
+   ],
+   "extracted_at": "2026-11-16T10:23:55Z"
   },
   {
    "id": "41-handforth-road-completion",
@@ -808,163 +682,7 @@
    "extracted_at": "2026-10-03T06:03:32Z"
   },
   {
-   "id": "5-27-croxdale-road-setup",
-   "site": "5-27 Croxdale Road",
-   "sheet": "setup",
-   "issued": "23/09/26",
-   "elevations": "Sides + rear / front + roof",
-   "prepared_by": "",
-   "reason_for_change": "",
-   "source": "PROJECT SET UP KEY DATES 5-27 CROXDALE ROAD - DRAFT.pdf",
-   "source_modified": "2026-10-01T10:31:38Z",
-   "source_client_modified": "2026-10-01T08:00:26Z",
-   "page": 1,
-   "rows": [
-    {
-     "n": 1,
-     "label": "Lay protection and pre-scaffold tasks",
-     "sug_start": "23/09",
-     "sug_complete": "23/09",
-     "adj_start": "23/09",
-     "adj_complete": "23/09",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 2,
-     "label": "Scaffold erect (inspect on completion)",
-     "sug_start": "24/09",
-     "sug_complete": "30/09",
-     "adj_start": "24/09",
-     "adj_complete": "07/10",
-     "comment": "Sides and rear",
-     "confirmed": false
-    },
-    {
-     "n": 3,
-     "label": "Scaffold erect (inspect on completion)",
-     "sug_start": "01/10",
-     "sug_complete": "05/10",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "Front and roof",
-     "confirmed": false
-    },
-    {
-     "n": 4,
-     "label": "Scaffold erect (inspect on completion)",
-     "sug_start": "",
-     "sug_complete": "",
-     "adj_start": "",
-     "adj_complete": "",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 5,
-     "label": "Alarm installed",
-     "sug_start": "24/09",
-     "sug_complete": "24/09",
-     "adj_start": "24/09",
-     "adj_complete": "24/09",
-     "comment": "Front and roof: 01/10",
-     "confirmed": false
-    },
-    {
-     "n": 6,
-     "label": "Gantry",
-     "sug_start": "",
-     "sug_complete": "25/09",
-     "adj_start": "",
-     "adj_complete": "25/09",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 7,
-     "label": "Welfare set up",
-     "sug_start": "28/09",
-     "sug_complete": "29/09",
-     "adj_start": "07/10",
-     "adj_complete": "09/10",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 8,
-     "label": "Toilet on site",
-     "sug_start": "29/09",
-     "sug_complete": "29/09",
-     "adj_start": "08/10",
-     "adj_complete": "08/10",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 9,
-     "label": "Electrician for site power",
-     "sug_start": "29/09",
-     "sug_complete": "29/09",
-     "adj_start": "12/10",
-     "adj_complete": "12/10",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 10,
-     "label": "Enabling works",
-     "sug_start": "30/09",
-     "sug_complete": "01/10",
-     "adj_start": "12/10",
-     "adj_complete": "12/10",
-     "comment": "Front and roof: 06/10 to 07/10",
-     "confirmed": false
-    },
-    {
-     "n": 11,
-     "label": "Survey extent of works",
-     "sug_start": "02/10",
-     "sug_complete": "02/10",
-     "adj_start": "13/10",
-     "adj_complete": "13/10",
-     "comment": "Front and roof: 08/10",
-     "confirmed": false
-    },
-    {
-     "n": 12,
-     "label": "JDI initial walk over (2–3 days after scaffold complete)",
-     "sug_start": "02/10",
-     "sug_complete": "02/10",
-     "adj_start": "14/10",
-     "adj_complete": "14/10",
-     "comment": "",
-     "confirmed": false
-    },
-    {
-     "n": 13,
-     "label": "JDI survey",
-     "sug_start": "06/10",
-     "sug_complete": "06/10",
-     "adj_start": "15/10",
-     "adj_complete": "15/10",
-     "comment": "Front and roof: 14/10",
-     "confirmed": false
-    },
-    {
-     "n": 14,
-     "label": "Surveyor survey",
-     "sug_start": "06/10",
-     "sug_complete": "06/10",
-     "adj_start": "15/10",
-     "adj_complete": "15/10",
-     "comment": "Front and roof: 14/10",
-     "confirmed": false
-    }
-   ],
-   "extracted_at": "2026-10-03T06:03:32Z"
-  },
-  {
-   "id": "5-27-croxdale-road-setup",
+   "id": "5-27-croxdale-road-setup--project-set-up-key-dates-5-27-croxdale-road",
    "site": "5-27 Croxdale Road",
    "sheet": "setup",
    "issued": "08/10/2026",
@@ -1140,16 +858,172 @@
    "extracted_at": "2026-10-08T08:24:35Z"
   },
   {
-   "id": "83-85a-queens-gate-terrace-setup",
-   "site": "83-85a Queens Gate Terrace",
+   "id": "5-27-croxdale-road-setup--sides-rear-front-roof",
+   "site": "5-27 Croxdale Road",
    "sheet": "setup",
-   "issued": "04/11/2026",
+   "issued": "23/09/26",
+   "elevations": "Sides + rear / front + roof",
+   "prepared_by": "",
+   "reason_for_change": "",
+   "source": "PROJECT SET UP KEY DATES 5-27 CROXDALE ROAD - DRAFT.pdf",
+   "source_modified": "2026-10-01T10:31:38Z",
+   "source_client_modified": "2026-10-01T08:00:26Z",
+   "page": 1,
+   "rows": [
+    {
+     "n": 1,
+     "label": "Lay protection and pre-scaffold tasks",
+     "sug_start": "23/09",
+     "sug_complete": "23/09",
+     "adj_start": "23/09",
+     "adj_complete": "23/09",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 2,
+     "label": "Scaffold erect (inspect on completion)",
+     "sug_start": "24/09",
+     "sug_complete": "30/09",
+     "adj_start": "24/09",
+     "adj_complete": "07/10",
+     "comment": "Sides and rear",
+     "confirmed": false
+    },
+    {
+     "n": 3,
+     "label": "Scaffold erect (inspect on completion)",
+     "sug_start": "01/10",
+     "sug_complete": "05/10",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "Front and roof",
+     "confirmed": false
+    },
+    {
+     "n": 4,
+     "label": "Scaffold erect (inspect on completion)",
+     "sug_start": "",
+     "sug_complete": "",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 5,
+     "label": "Alarm installed",
+     "sug_start": "24/09",
+     "sug_complete": "24/09",
+     "adj_start": "24/09",
+     "adj_complete": "24/09",
+     "comment": "Front and roof: 01/10",
+     "confirmed": false
+    },
+    {
+     "n": 6,
+     "label": "Gantry",
+     "sug_start": "",
+     "sug_complete": "25/09",
+     "adj_start": "",
+     "adj_complete": "25/09",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 7,
+     "label": "Welfare set up",
+     "sug_start": "28/09",
+     "sug_complete": "29/09",
+     "adj_start": "07/10",
+     "adj_complete": "09/10",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 8,
+     "label": "Toilet on site",
+     "sug_start": "29/09",
+     "sug_complete": "29/09",
+     "adj_start": "08/10",
+     "adj_complete": "08/10",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 9,
+     "label": "Electrician for site power",
+     "sug_start": "29/09",
+     "sug_complete": "29/09",
+     "adj_start": "12/10",
+     "adj_complete": "12/10",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 10,
+     "label": "Enabling works",
+     "sug_start": "30/09",
+     "sug_complete": "01/10",
+     "adj_start": "12/10",
+     "adj_complete": "12/10",
+     "comment": "Front and roof: 06/10 to 07/10",
+     "confirmed": false
+    },
+    {
+     "n": 11,
+     "label": "Survey extent of works",
+     "sug_start": "02/10",
+     "sug_complete": "02/10",
+     "adj_start": "13/10",
+     "adj_complete": "13/10",
+     "comment": "Front and roof: 08/10",
+     "confirmed": false
+    },
+    {
+     "n": 12,
+     "label": "JDI initial walk over (2–3 days after scaffold complete)",
+     "sug_start": "02/10",
+     "sug_complete": "02/10",
+     "adj_start": "14/10",
+     "adj_complete": "14/10",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 13,
+     "label": "JDI survey",
+     "sug_start": "06/10",
+     "sug_complete": "06/10",
+     "adj_start": "15/10",
+     "adj_complete": "15/10",
+     "comment": "Front and roof: 14/10",
+     "confirmed": false
+    },
+    {
+     "n": 14,
+     "label": "Surveyor survey",
+     "sug_start": "06/10",
+     "sug_complete": "06/10",
+     "adj_start": "15/10",
+     "adj_complete": "15/10",
+     "comment": "Front and roof: 14/10",
+     "confirmed": false
+    }
+   ],
+   "extracted_at": "2026-10-03T06:03:32Z"
+  },
+  {
+   "id": "83-85-queens-gate-setup",
+   "site": "83-85 Queens Gate",
+   "sheet": "setup",
+   "issued": "09/11/26",
    "elevations": "All",
    "prepared_by": "Faye Bartolo",
    "reason_for_change": "",
-   "source": "JDI-Project-Set-Up-Key-Dates-Externals - 83-85 QGT.pdf",
-   "source_modified": "2026-11-04T10:21:09Z",
-   "source_client_modified": "2026-11-04T10:21:04Z",
+   "source": "JDI-Project-Set-Up-Key-Dates-Externals - 83-85 QGT - Draft.pdf",
+   "source_modified": "2026-11-09T08:38:45Z",
+   "source_client_modified": "2026-11-09T08:16:56Z",
    "page": 1,
    "rows": [
     {
@@ -1179,33 +1053,33 @@
      "sug_complete": "30/11",
      "adj_start": "",
      "adj_complete": "",
-     "comment": "Bridge, Rear and Chimneys",
+     "comment": "Rear Elevation and Bridge",
      "confirmed": false
     },
     {
      "n": 4,
      "label": "Scaffold erect (inspect on completion)",
-     "sug_start": "",
-     "sug_complete": "",
+     "sug_start": "30/11",
+     "sug_complete": "30/11",
      "adj_start": "",
      "adj_complete": "",
-     "comment": "",
+     "comment": "Chimneys",
      "confirmed": false
     },
     {
      "n": 5,
      "label": "Alarm installed",
      "sug_start": "16/11",
-     "sug_complete": "23/11",
+     "sug_complete": "16/11/",
      "adj_start": "",
      "adj_complete": "",
-     "comment": "16/11 = front and 23/11 = rear",
+     "comment": "",
      "confirmed": false
     },
     {
      "n": 6,
      "label": "Gantry",
-     "sug_start": "16/11",
+     "sug_start": "17/11",
      "sug_complete": "17/11",
      "adj_start": "",
      "adj_complete": "",
@@ -1215,8 +1089,8 @@
     {
      "n": 7,
      "label": "Welfare set up",
-     "sug_start": "01/12",
-     "sug_complete": "03/12",
+     "sug_start": "18/11",
+     "sug_complete": "19/11",
      "adj_start": "",
      "adj_complete": "",
      "comment": "",
@@ -1229,14 +1103,14 @@
      "sug_complete": "18/11",
      "adj_start": "",
      "adj_complete": "",
-     "comment": "Book on site for scaffolders",
+     "comment": "",
      "confirmed": false
     },
     {
      "n": 9,
      "label": "Electrician for site power",
-     "sug_start": "04/12",
-     "sug_complete": "04/12",
+     "sug_start": "20/11",
+     "sug_complete": "20/11",
      "adj_start": "",
      "adj_complete": "",
      "comment": "",
@@ -1245,18 +1119,18 @@
     {
      "n": 10,
      "label": "Enabling works",
-     "sug_start": "04/12",
-     "sug_complete": "09/12",
+     "sug_start": "01/12",
+     "sug_complete": "03/12",
      "adj_start": "",
      "adj_complete": "",
-     "comment": "DOFF Rear on 10/12 - 11/12",
+     "comment": "",
      "confirmed": false
     },
     {
      "n": 11,
      "label": "Start painting prep",
-     "sug_start": "14/12",
-     "sug_complete": "14/12",
+     "sug_start": "04/12",
+     "sug_complete": "04/12",
      "adj_start": "",
      "adj_complete": "",
      "comment": "",
@@ -1265,8 +1139,8 @@
     {
      "n": 12,
      "label": "Start fixed items work",
-     "sug_start": "14/12",
-     "sug_complete": "",
+     "sug_start": "04/12",
+     "sug_complete": "04/12",
      "adj_start": "",
      "adj_complete": "",
      "comment": "",
@@ -1275,8 +1149,8 @@
     {
      "n": 13,
      "label": "Survey extent of works",
-     "sug_start": "14/12",
-     "sug_complete": "15/12",
+     "sug_start": "04/12",
+     "sug_complete": "04/12",
      "adj_start": "",
      "adj_complete": "",
      "comment": "",
@@ -1289,14 +1163,14 @@
      "sug_complete": "02/12",
      "adj_start": "",
      "adj_complete": "",
-     "comment": "JB A/L these dates",
+     "comment": "",
      "confirmed": false
     },
     {
      "n": 15,
      "label": "Send the schedules to the surveyor",
-     "sug_start": "15/12",
-     "sug_complete": "15/12",
+     "sug_start": "07/12",
+     "sug_complete": "07/12",
      "adj_start": "",
      "adj_complete": "",
      "comment": "",
@@ -1305,28 +1179,28 @@
     {
      "n": 16,
      "label": "JDI survey",
-     "sug_start": "16/12",
-     "sug_complete": "16/12",
+     "sug_start": "08/12",
+     "sug_complete": "08/12",
      "adj_start": "",
      "adj_complete": "",
-     "comment": "AM",
+     "comment": "",
      "confirmed": false
     },
     {
      "n": 17,
      "label": "Surveyor survey",
-     "sug_start": "16/12",
-     "sug_complete": "16/12",
+     "sug_start": "09/12",
+     "sug_complete": "09/12",
      "adj_start": "",
      "adj_complete": "",
-     "comment": "PM",
+     "comment": "",
      "confirmed": false
     }
    ],
-   "extracted_at": "2026-11-04T11:22:12Z"
+   "extracted_at": "2026-11-16T10:23:55Z"
   },
   {
-   "id": "hillcourt-34-highgate-west-hill-completion",
+   "id": "hillcourt-34-highgate-west-hill-completion--phase-1",
    "site": "Hillcourt, 34 Highgate West Hill",
    "sheet": "completion",
    "issued": "06/11/2026",
@@ -1452,7 +1326,7 @@
    "extracted_at": "2026-11-06T13:22:00Z"
   },
   {
-   "id": "hillcourt-34-highgate-west-hill-completion",
+   "id": "hillcourt-34-highgate-west-hill-completion--phase-2",
    "site": "Hillcourt, 34 Highgate West Hill",
    "sheet": "completion",
    "issued": "06/11/2026",
