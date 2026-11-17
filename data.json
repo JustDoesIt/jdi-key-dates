@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T10:23:55Z",
+ "updated": "2026-11-17T13:25:49Z",
  "projects": [
   {
    "id": "129-143-bournehall-avenue-setup--all",
@@ -332,6 +332,132 @@
     }
    ],
    "extracted_at": "2026-10-08T08:24:35Z"
+  },
+  {
+   "id": "23-queens-gate-terrace-completion",
+   "site": "23 Queens Gate Terrace",
+   "sheet": "completion",
+   "issued": "",
+   "elevations": "",
+   "prepared_by": "",
+   "reason_for_change": "",
+   "source": "JDI-Project-Completion-Key-Dates-Externals - 23 QGT.pdf",
+   "source_modified": "2026-11-17T12:56:20Z",
+   "source_client_modified": "2026-11-17T12:56:14Z",
+   "page": 1,
+   "rows": [
+    {
+     "n": 1,
+     "label": "Building works",
+     "sug_start": "",
+     "sug_complete": "20/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 2,
+     "label": "Roofing complete",
+     "sug_start": "",
+     "sug_complete": "20/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 3,
+     "label": "Painting complete",
+     "sug_start": "",
+     "sug_complete": "20/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 4,
+     "label": "Windows eased, if reported (1 day before JDI snag)",
+     "sug_start": "23/11",
+     "sug_complete": "23/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 5,
+     "label": "Full clean and JDI snag",
+     "sug_start": "23/11",
+     "sug_complete": "24/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 6,
+     "label": "Surveyor attendance for snagging",
+     "sug_start": "25/11",
+     "sug_complete": "25/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 7,
+     "label": "Decommission site (site welfare)",
+     "sug_start": "26/11",
+     "sug_complete": "27/11",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 8,
+     "label": "Scaffold dismantle",
+     "sug_start": "27/11",
+     "sug_complete": "03/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 9,
+     "label": "Final clean",
+     "sug_start": "04/12",
+     "sug_complete": "04/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 10,
+     "label": "Final day on site",
+     "sug_start": "04/12",
+     "sug_complete": "04/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    },
+    {
+     "n": 11,
+     "label": "Project handover",
+     "sug_start": "15/12",
+     "sug_complete": "15/12",
+     "adj_start": "",
+     "adj_complete": "",
+     "comment": "",
+     "confirmed": false
+    }
+   ],
+   "extracted_at": "2026-11-17T13:25:49Z"
   },
   {
    "id": "27-palace-gardens-terrace-completion",
