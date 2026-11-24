@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T12:21:45Z",
+ "updated": "2026-11-24T05:22:06Z",
  "projects": [
   {
    "id": "129-143-bournehall-avenue-setup--all",
@@ -1143,13 +1143,13 @@
    "id": "83-85-queens-gate-setup",
    "site": "83-85 Queens Gate",
    "sheet": "setup",
-   "issued": "09/11/26",
+   "issued": "23/11/26",
    "elevations": "All",
    "prepared_by": "Faye Bartolo",
-   "reason_for_change": "",
+   "reason_for_change": "Dates from welfare on moved 2 working days later. JDI survey removed. Surveyor survey 10/12 to the front; rear too if ready, timber only. DOFF the rear added, starting 14/12.",
    "source": "JDI-Project-Set-Up-Key-Dates-Externals - 83-85 QGT - Draft.pdf",
-   "source_modified": "2026-11-09T08:38:45Z",
-   "source_client_modified": "2026-11-09T08:16:56Z",
+   "source_modified": "2026-11-24T04:26:44Z",
+   "source_client_modified": "2026-11-23T19:01:07Z",
    "page": 1,
    "rows": [
     {
@@ -1196,7 +1196,7 @@
      "n": 5,
      "label": "Alarm installed",
      "sug_start": "16/11",
-     "sug_complete": "16/11/",
+     "sug_complete": "16/11",
      "adj_start": "",
      "adj_complete": "",
      "comment": "",
@@ -1217,8 +1217,8 @@
      "label": "Welfare set up",
      "sug_start": "18/11",
      "sug_complete": "19/11",
-     "adj_start": "",
-     "adj_complete": "",
+     "adj_start": "02/12",
+     "adj_complete": "03/12",
      "comment": "",
      "confirmed": false
     },
@@ -1237,8 +1237,8 @@
      "label": "Electrician for site power",
      "sug_start": "20/11",
      "sug_complete": "20/11",
-     "adj_start": "",
-     "adj_complete": "",
+     "adj_start": "03/12",
+     "adj_complete": "03/12",
      "comment": "",
      "confirmed": false
     },
@@ -1247,8 +1247,8 @@
      "label": "Enabling works",
      "sug_start": "01/12",
      "sug_complete": "03/12",
-     "adj_start": "",
-     "adj_complete": "",
+     "adj_start": "03/12",
+     "adj_complete": "09/12",
      "comment": "",
      "confirmed": false
     },
@@ -1257,7 +1257,7 @@
      "label": "Start painting prep",
      "sug_start": "04/12",
      "sug_complete": "04/12",
-     "adj_start": "",
+     "adj_start": "03/12",
      "adj_complete": "",
      "comment": "",
      "confirmed": false
@@ -1267,7 +1267,7 @@
      "label": "Start fixed items work",
      "sug_start": "04/12",
      "sug_complete": "04/12",
-     "adj_start": "",
+     "adj_start": "03/12",
      "adj_complete": "",
      "comment": "",
      "confirmed": false
@@ -1277,8 +1277,8 @@
      "label": "Survey extent of works",
      "sug_start": "04/12",
      "sug_complete": "04/12",
-     "adj_start": "",
-     "adj_complete": "",
+     "adj_start": "03/12",
+     "adj_complete": "09/12",
      "comment": "",
      "confirmed": false
     },
@@ -1287,8 +1287,8 @@
      "label": "JDI initial walk over (2–3 days after scaffold complete)",
      "sug_start": "02/12",
      "sug_complete": "02/12",
-     "adj_start": "",
-     "adj_complete": "",
+     "adj_start": "09/12",
+     "adj_complete": "09/12",
      "comment": "",
      "confirmed": false
     },
@@ -1297,8 +1297,8 @@
      "label": "Send the schedules to the surveyor",
      "sug_start": "07/12",
      "sug_complete": "07/12",
-     "adj_start": "",
-     "adj_complete": "",
+     "adj_start": "09/12",
+     "adj_complete": "10/12",
      "comment": "",
      "confirmed": false
     },
@@ -1309,7 +1309,7 @@
      "sug_complete": "08/12",
      "adj_start": "",
      "adj_complete": "",
-     "comment": "",
+     "comment": "Removed",
      "confirmed": false
     },
     {
@@ -1317,13 +1317,23 @@
      "label": "Surveyor survey",
      "sug_start": "09/12",
      "sug_complete": "09/12",
+     "adj_start": "10/12",
+     "adj_complete": "10/12",
+     "comment": "Front. Rear if ready, timber only",
+     "confirmed": false
+    },
+    {
+     "n": 18,
+     "label": "DOFF the rear",
+     "sug_start": "14/12",
+     "sug_complete": "",
      "adj_start": "",
      "adj_complete": "",
-     "comment": "",
+     "comment": "Rear elevation",
      "confirmed": false
     }
    ],
-   "extracted_at": "2026-11-16T10:23:55Z"
+   "extracted_at": "2026-11-24T05:22:03Z"
   },
   {
    "id": "hillcourt-34-highgate-west-hill-completion",
