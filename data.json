@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T10:08:15Z",
+ "updated": "2026-11-27T11:00:23Z",
  "projects": [
   {
    "id": "129-143-bournehall-avenue-setup--all",
@@ -574,8 +574,8 @@
    "prepared_by": "Faye Bartolo",
    "reason_for_change": "",
    "source": "JDI-Project-Completion-Key-Dates-Externals - 31 Roland Gardens.pdf",
-   "source_modified": "2026-11-27T10:05:27Z",
-   "source_client_modified": "2026-11-27T10:05:18Z",
+   "source_modified": "2026-11-27T10:58:45Z",
+   "source_client_modified": "2026-11-27T10:58:39Z",
    "page": 1,
    "rows": [
     {
@@ -584,7 +584,7 @@
      "sug_start": "",
      "sug_complete": "04/12",
      "adj_start": "",
-     "adj_complete": "",
+     "adj_complete": "01/12",
      "comment": "",
      "confirmed": true
     },
@@ -594,7 +594,7 @@
      "sug_start": "",
      "sug_complete": "04/12",
      "adj_start": "",
-     "adj_complete": "",
+     "adj_complete": "01/12",
      "comment": "",
      "confirmed": true
     },
@@ -604,7 +604,7 @@
      "sug_start": "",
      "sug_complete": "04/12",
      "adj_start": "",
-     "adj_complete": "",
+     "adj_complete": "01/12",
      "comment": "",
      "confirmed": true
     },
@@ -614,7 +614,7 @@
      "sug_start": "",
      "sug_complete": "07/12",
      "adj_start": "",
-     "adj_complete": "",
+     "adj_complete": "02/12",
      "comment": "",
      "confirmed": true
     },
@@ -623,8 +623,8 @@
      "label": "Full clean and JDI snag",
      "sug_start": "07/12",
      "sug_complete": "08/12",
-     "adj_start": "",
-     "adj_complete": "",
+     "adj_start": "02/12",
+     "adj_complete": "04/12",
      "comment": "",
      "confirmed": true
     },
@@ -633,8 +633,8 @@
      "label": "Surveyor attendance for snagging",
      "sug_start": "09/12",
      "sug_complete": "09/12",
-     "adj_start": "",
-     "adj_complete": "",
+     "adj_start": "07/12",
+     "adj_complete": "07/12",
      "comment": "",
      "confirmed": true
     },
@@ -643,8 +643,8 @@
      "label": "Decommission site (site welfare)",
      "sug_start": "10/12",
      "sug_complete": "11/12",
-     "adj_start": "",
-     "adj_complete": "",
+     "adj_start": "07/12",
+     "adj_complete": "09/12",
      "comment": "",
      "confirmed": true
     },
@@ -653,8 +653,8 @@
      "label": "Scaffold dismantle",
      "sug_start": "11/12",
      "sug_complete": "17/12",
-     "adj_start": "",
-     "adj_complete": "",
+     "adj_start": "10/12",
+     "adj_complete": "18/12",
      "comment": "",
      "confirmed": true
     },
@@ -689,7 +689,7 @@
      "confirmed": true
     }
    ],
-   "extracted_at": "2026-11-27T10:08:12Z"
+   "extracted_at": "2026-11-27T11:00:20Z"
   },
   {
    "id": "41-handforth-road-completion",
